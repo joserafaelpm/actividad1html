@@ -5,26 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
     <title>Formulario de contacto</title>
 </head>
 
 <body>
-    <form id="envioForm" name="formulario" method="POST" action="https://gemetech.co/mail/mail.php">
-        <label for="usuario">Ingrese su nombre:</label>
-        <input class="" type="text" placeholder="Digite su nombre" maxlength="50" name="nombre">
-        <br>
-        <label for="asunto">Asunto del correo</label>
-        <input class="" type="text" placeholder="Digite el asunto del correo" maxlength="50" name="asunto">
-        <br>
-        <label for="email">Destinatario:</label>
-        <input class="" type="email" placeholder="Digite su email" maxlength="50" name="destinatario">
-        <br>
-        <label for="email">Ingrese su mensaje:</label>
-        <textarea name="mensaje" placeholder="Digite su mensaje" cols="30" rows="10"></textarea>
-        <br>
-        <hr>
-        <input type="submit" name="submit" class=""> <button>Cancelar</button>
+    <section class="image-formulario">
+        <img src="img/formulario.jpg" />
+    </section>
+    <form class="formulario" id="envioForm" name="formulario" method="POST" action="https://gemetech.co/mail/mail.php">
+        <div class="usuario">
+            <label class="label-user" for="usuario">Ingrese su nombre:</label>
+            <input class="text-user" type="text" placeholder="Digite su nombre" maxlength="50" name="nombre">
+            <br>
+        </div>
+        <div class="asunto">
+            <label for="asunto">Asunto del correo</label>
+            <input class="" type="text" placeholder="Digite el asunto del correo" maxlength="50" name="asunto">
+            <br>
+        </div>
+        <div class="destinatario">
+            <label for="email">Destinatario:</label>
+            <input class="" type="email" placeholder="Digite su email" maxlength="50" name="destinatario">
+            <br>
+        </div>
+        <div class="mensaje">
+            <label for="email">Ingrese su mensaje:</label>
+            <textarea name="mensaje" placeholder="Digite su mensaje" cols="30" rows="10"></textarea>
+            <br>
+            <hr>
+        </div>
+        <input type="submit" name="submit" class="enviar"> <button class="cancelar">Cancelar</button>
     </form>
+    <footer>
+        &copy; 2021 <a href="https://www.instagram.com/joserafa_23/">Rafael Peña Mena </a>. Anterior actividad de <a href="index.html">Hoja de vida</a>
+      </footer>
 </body>
-
 </html>
